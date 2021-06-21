@@ -21,7 +21,7 @@ function animation() {
     setTimeout(() => modalJinnFirst.style.display = "block", 5640);
     counter++;
     if (innerWidth < 500) {
-      modal.style.backgroundImage = 'url(../img/mobile/popup1-bg.png)';
+      modal.style.backgroundImage = 'url(img/mobile/popup1-bg.png)';
     }
   } else {
     modal.classList.toggle("modal-width");
