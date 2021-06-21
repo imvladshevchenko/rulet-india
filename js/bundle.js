@@ -34,10 +34,10 @@ function animation() {
     wheel.classList.toggle("step-2");
     wheelBtn.classList.toggle("animation-in-process");
     closePopup.style.display = "none";
-    modal.style.backgroundImage = 'url(../img/desktop/popup2-bg.png)';
+    modal.style.backgroundImage = 'url(img/desktop/popup2-bg.png)';
     setTimeout(() => modalJinnSecond.style.display = "block", 5640);
     if (innerWidth < 500) {
-      modal.style.backgroundImage = 'url(../img/mobile/popup2-bg.png)';
+      modal.style.backgroundImage = 'url(img/mobile/popup2-bg.png)';
     }
   }
   function modalPopup() {
