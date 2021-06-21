@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>BONS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="">
+        <img class="header__logo" src="./img/desktop/logo.png" alt="logo" />
+      </a>
+    </header>
+    <div
+      id="modalJinnFirst"
+      class="modal__jinn mousemove"
+      data-movespeed="90"
+      style="transform: translate(4.81667px, 5.04444px) rotate(0.01deg)"
+    >
+      <img src="./img/desktop/popup-jinn.png" alt="" />
+    </div>
+    <div
+      id="modalJinnSecond"
+      class="modal__jinn mousemove"
+      data-movespeed="90"
+      style="transform: translate(4.81667px, 5.04444px) rotate(0.01deg)"
+    >
+      <img src="./img/desktop/popup2-jinn.png" alt="" />
+    </div>
+    <div class="wrapper">
+      <div class="space1">
+        <img src="./img/desktop/flashlight-1.png" alt="" />
+      </div>
+      <div class="space2">
+        <img src="./img/desktop/flashlight-2.png" alt="" />
+      </div>
+      <div class="space3">
+        <img src="./img/desktop/flashlight-3.png" alt="" />
+      </div>
+      <div class="planet">
+        <img src="./img/desktop/flashlight-4.png" alt="" />
+      </div>
+      <div
+        class="jinn mousemove"
+        data-movespeed="-90"
+        style="transform: translate(4.81667px, 5.04444px) rotate(0.01deg)"
+      >
+        <img src="./img/desktop/jinn.png" alt="" />
+      </div>
+
+      <div class="wheel-wrapper">
+        <img
+          class="wheel--outside"
+          src="./img/desktop/circle.png"
+          alt="wheel-outside"
+        />
+        <img
+          class="wheel--inside"
+          id="wheel"
+          src="./img/desktop/animation-circle.png"
+          alt="wheel-inside"
+        />
+        <div class="wheel-btn" id="button" onclick="animation()">
+          <img src="./img/desktop/button.png" alt="" />
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <p class="modal__title" id="firstTitle">बधाई हो!</p>
+        <p class="modal__title modal__title--second" id="secondTitle">
+          बधाई हो!
+        </p>
+        <div class="modal__text-wrapper" id="firstWrapper">
+          <img
+            class="modal__glare1"
+            src="./img/desktop/popup-glare.png"
+            alt=""
+          />
+          <img class="modal__lamp" src="./img/desktop/lamp.png" alt="" />
+          <p class="modal__text">आपने <span>200</span></p>
+          <p class="modal__text">फ्री स्पिन जीते हैं</p>
+        </div>
+        <div class="modal__text-wrapper" id="secondWrapper">
+          <img
+            class="modal__cubes"
+            src="./img/desktop/popup2-cubes.png"
+            alt=""
+          />
+          <img
+            class="modal__glare2"
+            src="./img/desktop/popup2-glare.png"
+            alt=""
+          />
+          <p class="modal__text modal__text--second">
+            आपने <span>200%</span> जमा बोनस और <span>+200</span> निःशुल्क स्पिन
+            जीते
+          </p>
+        </div>
+        <div class="modal__button" id="getPrizes" onclick="closeModal()">
+          <p id="buttonText">ट्विस्ट मोर</p>
+        </div>
+        <a class="modal__button" href="/" id="redirectLink">
+          <p id="buttonText">ट्विस्ट मोर</p>
+        </a>
+        <div
+          class="modal__close-button"
+          id="closePopup"
+          onclick="closeModal()"
+        ></div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <main class="main">
+      <div class="container">
+        <ul class="list">
+          <li class="list-item first-item">
+            <img class="list-item__img" src="./img/desktop/cubes.png" alt="" />
+            <p class="list-item__text">कई स्लॉट स्लॉट</p>
+          </li>
+          <li class="list-item second-item">
+            <img class="list-item__img" src="./img/desktop/cards.png" alt="" />
+            <p class="list-item__text">लाइव डीलर</p>
+          </li>
+          <li class="list-item third-item">
+            <img class="list-item__img" src="./img/desktop/slots.png" alt="" />
+            <p class="list-item__text">1000+ स्पिन</p>
+          </li>
+          <li class="list-item fourth-item">
+            <img
+              class="list-item__img"
+              src="./img/desktop/piggy-bank.png"
+              alt=""
+            />
+            <p class="list-item__text last-child">10% कैशबैक</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
